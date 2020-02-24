@@ -1,0 +1,24 @@
+package com.cts.swmd.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class DefaultController {
+	
+	
+	
+	
+
+	@GetMapping({"","/","/home"})
+	public ModelAndView defaultGetRequestHandler() {
+		
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("home");
+		mv.addObject("pageTitle","home page-welcome All");
+		mv.addObject("developers",new String[] {"mahesh","rishab","dhivya"});
+		
+		return mv;
+	}
+
+}

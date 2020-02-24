@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Spring-web-rest-boot-demp/C:\/Users\/Alchemy\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.2.4.RELEASE\/spring-data-jpa-2.2.4.RELEASE.jar=/maven.pomderived=/true=/=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/=/maven.pomderived=/true=/=/org.eclipse.jst.component.archivename=/spring-data-jpa-2.2.4.RELEASE.jar=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.2.4.RELEASE=/=/maven.scope=/compile=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1582524987300"/>
+<typeInfo handle="=Spring-web-rest-boot-demp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cts.demo.service{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1582528214073"/>
+</typeInfoHistroy>

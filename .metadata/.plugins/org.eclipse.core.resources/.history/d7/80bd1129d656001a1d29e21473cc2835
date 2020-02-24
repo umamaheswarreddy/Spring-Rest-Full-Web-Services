@@ -1,0 +1,72 @@
+package com.cts.demo.service;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import com.cts.demo.Exception.EmployeeException;
+import com.cts.demo.model.Department;
+import com.cts.demo.model.Employee;
+
+public class EmployeeServiceImpl implements EmployeeService {
+
+	@Override
+	public Employee add(Employee emp) throws EmployeeException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee save(Employee emp) throws EmployeeException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteById(Long empId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Employee findById(Long empId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee findByMobileNumber(String mobileNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee findByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> fingAllByDept(Department dept) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> fingAllByJoinDate(LocalDate joinDate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> findAllByBasicRange(double lb, double ub) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.cts.swmd.model;
+
+import java.time.LocalDate;
+
+public class Visitor {
+	
+	
+	private String firstName;
+	private String lastName;
+	private LocalDate dateOfbirth;
+	private int age;
+
+
+}

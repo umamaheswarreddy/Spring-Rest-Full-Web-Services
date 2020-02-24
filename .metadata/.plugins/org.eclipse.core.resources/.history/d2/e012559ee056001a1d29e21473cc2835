@@ -1,0 +1,29 @@
+package com.cts.demo.dao;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.cts.demo.model.Department;
+import com.cts.demo.model.Employee;
+
+
+
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+	
+	
+	boolean existsByMobileNumber(String mobileNumber);
+	boolean existsByEmail(String email);
+	
+	Employee findByMobileNumber(String mobileNumber);
+	Employee findByEmail(String email);
+	
+	List<Employee> fingAllByDept(Department dept);
+	List<Employee> fingAllByJoinDate(LocalDate joinDate);
+	@Query("SELECT e FROM Employee e WHERE e.basic>=:lb and e.basic<:ub")
+	List<Employee> findAllByBasicRange(double lb,double ub);
+	
+
+}

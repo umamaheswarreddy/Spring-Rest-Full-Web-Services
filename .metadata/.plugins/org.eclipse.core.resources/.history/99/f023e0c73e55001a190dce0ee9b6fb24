@@ -1,0 +1,14 @@
+package com.cts.swmd.service;
+
+import com.cts.swmd.model.Visitor;
+
+public class VisitorServiceImpl implements VisitorService {
+
+	public Visitor computeAge(Visitor visitor) {
+		
+		
+		
+		return null;
+	}
+
+}

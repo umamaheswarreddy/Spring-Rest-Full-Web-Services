@@ -1,0 +1,87 @@
+package com.cts.demo.service;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.cts.demo.Exception.EmployeeException;
+import com.cts.demo.dao.EmployeeRepository;
+import com.cts.demo.model.Department;
+import com.cts.demo.model.Employee;
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+
+	private EmployeeRepository empRepo;
+	
+	@Override
+	public Employee add(Employee emp) throws EmployeeException {
+		if(emp!=null) {
+			if(empRepo.existsById(emp.getEmpId())) {
+				throw new EmployeeException("there exists an emp with given id");
+			}else if(empRepo.existsByMobileNumber(emp.getMobileNumber())) {
+				throw new EmployeeException("there exists an emp with given mobile number");
+			}else if(empRepo.existsByEmail(emp.getEmail())) {
+				throw new EmployeeException("there exists an emp with given email");
+			}else {
+				emp=empRepo.save(emp);
+			}
+		}
+		return emp;
+	}
+
+	@Override
+	public Employee save(Employee emp) throws EmployeeException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteById(Long empId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Employee findById(Long empId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee findByMobileNumber(String mobileNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee findByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> fingAllByDept(Department dept) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> fingAllByJoinDate(LocalDate joinDate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> findAllByBasicRange(double lb, double ub) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

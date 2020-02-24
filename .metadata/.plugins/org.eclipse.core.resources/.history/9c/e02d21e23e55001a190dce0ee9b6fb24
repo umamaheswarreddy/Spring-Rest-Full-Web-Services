@@ -1,0 +1,20 @@
+package com.cts.swmd.service;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+import com.cts.swmd.model.Visitor;
+
+public class VisitorServiceImpl implements VisitorService {
+
+	public Visitor computeAge(Visitor visitor) {
+		
+		if(visitor!=null) {
+			LocalDate today=LocalDate.now();
+			int age=Period.between(visitor.getDateOfbirth(),today).getYears();
+		}
+		
+		return visitor;
+	}
+
+}

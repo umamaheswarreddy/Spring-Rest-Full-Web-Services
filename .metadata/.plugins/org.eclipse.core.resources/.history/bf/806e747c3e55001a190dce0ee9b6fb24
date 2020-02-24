@@ -1,0 +1,13 @@
+package com.cts.swmd.service;
+
+import com.cts.swmd.model.Visitor;
+
+public class VisitorServiceImpl implements VisitorService {
+
+	@Override
+	public Visitor computeAge(Visitor visitor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,25 @@
+<%-- <%@page import="java.time.LoacalDate"%> --%>
+<%@page import="java.time.Localdate"%>
+
+
+
+<html>
+<head>
+
+<title>Home Page</title>
+<link rel="stylesheet" href="css/site.css" />
+
+</head>
+
+<body>
+	<header>
+
+		<h3 style="text-align: right">
+			<%=LocalDate.now()%>
+
+
+		</h3>
+
+		<h1>${appTitle}</h1>
+
+	</header>
